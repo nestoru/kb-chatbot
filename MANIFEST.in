@@ -1,0 +1,15 @@
+# MANIFEST.in
+
+include README.md
+include LICENSE
+
+# Exclude all .config files
+global-exclude *.config
+global-exclude *.config.json
+
+# Include all .py files in the package
+recursive-include kb_chatbot *.py
+
+# Exclude any cache directories
+global-exclude __pycache__
+global-exclude *.py[co]
